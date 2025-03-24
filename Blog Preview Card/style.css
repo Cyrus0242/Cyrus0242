@@ -1,0 +1,92 @@
+:root{
+--Yellow: hsl(47, 88%, 63%);
+--White: hsl(0, 0%, 100%);
+--Gray500: hsl(0, 0%, 42%);
+--Gray950: hsl(0, 0%, 7%);
+}
+*,
+*::before,
+*::after{
+margin: 0;
+padding: 0; 
+list-style: none;
+box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+}
+body{
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  background: var(--Yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+.main{
+  background: white;
+  border-radius: 15px;
+  border: 1px solid var(--Gray950);
+  width:375px;
+  height: auto;
+  padding: 20px;
+  box-shadow:10px 10px 5px var(--Gray950) ;
+  transition: .9s;
+}
+.main:hover{
+transition-duration: .5s;
+scale: 1.09;
+}
+.img{
+  display: flex;
+  justify-content: center;
+}
+h4{
+  font-weight: 800;
+  margin: 10px 0;
+  background: var(--Yellow);
+  display: inline-block;
+  padding: 10px;
+  border-radius: 7px;
+}
+h5{
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+h1{
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 800;
+  transition: .5s;
+}
+h1:hover{
+ color: var(--Yellow);
+ cursor: pointer;
+}
+.text{
+  font-weight: 500;
+  color: var(--Gray500);
+  margin-bottom: 15px;
+}
+.lower img{
+  width:40px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: .5s;
+}
+.lower img:hover{
+  opacity: .8;
+}
+span a{
+  font-weight: 800;
+  color: var(--Gray950);
+  text-decoration: none;
+}
