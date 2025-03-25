@@ -1,0 +1,124 @@
+:root{
+  /* ### Primary */
+
+--Softblue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+/* ### Neutral */
+
+--VerydarkbluemainBG: hsl(217, 54%, 11%);
+--VerydarkbluecardBG: hsl(216, 50%, 16%);
+--Verydarkblueline: hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+--primaryfont:"Hanken Grotesk", sans-serif;
+}
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+html,body{
+  height: 100%;
+}
+img{
+  width: 100%;
+  height: auto;
+  border-radius:20px;
+  transition: all .5s;
+  z-index: 1;
+}
+img:hover{
+  cursor: pointer;
+  scale: 1.03;
+}
+body{
+  font-family: var(--primaryfont);
+  background-color: var(--VerydarkbluemainBG);
+  color: var(--White);
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main{
+  background-color: var(--VerydarkbluecardBG);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px auto;
+  width: 375px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, .9);
+  transition: all .5s;
+}
+.main:hover{
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, .1);
+}
+.img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+p img {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  vertical-align: middle;
+  margin:10px 0;
+  margin-right: 5px;
+}
+h1{
+  font-size: 25px;
+  margin-bottom: 10px;
+  transition: all .5s;
+}
+h1:hover{
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+#footer{
+  margin-top: 20px;
+}
+div span.first{
+color: var(--Softblue);
+}
+
+div span.second:hover{
+color: var(--Cyan);
+cursor: pointer;
+}
+
+#footer img{
+width: 10%;
+height: auto;
+border: 1px solid var(--White);
+vertical-align: middle;
+margin-right:10px;
+}
+.text{
+  color:var(--Softblue);
+  font-weight: 300;
+  font-size: 15px;
+  border-bottom: 15px;
+}
+hr{
+  border: 1px solid var(--Verydarkblueline);
+}
+#contents{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+p.ETH img{
+  width: 12px;
+  height: 18px;
+}
+p.ETH{
+  color: var(--Cyan);
+}
+p.clock{
+  color: var(--Softblue);
+}
